@@ -1,3 +1,9 @@
+
+@media only screen and (max-width: 1921px) {
+  section.hero-container .hero-text-container {
+    padding-top: 3.5rem;
+  }
+}
 @media only screen and (max-width: 1441px) {
   .thumbnail-main-container.scrollable {
     justify-content: flex-start;
@@ -160,7 +166,7 @@
 }
 @media only screen and (max-width: 769px) {
   section.hero-container {
-    height: 68vw;
+    height: 74vw;
   }
   section.hero-container h1.title {
     font-size: 2rem;
@@ -186,10 +192,10 @@
     margin-left: 5px;
   }
   section.hero-container .banner-image-container .main-image {
-    height: 35vw;
+    height: 40vw;
   }
   section.hero-container .banner-image-container .side-image {
-    height: 23vw;
+    height: 27vw;
   }
   section.hero-container .banner-image-container h5 {
     bottom: -1rem;
@@ -301,7 +307,6 @@
     flex: 0 0 calc(49% - 11px);
   }
 }
-
 @media only screen and (max-width: 321px) {
   section.hero-container {
     height: 34vh;
@@ -330,4 +335,3 @@
     gap: 0.5rem;
   }
 }
-
