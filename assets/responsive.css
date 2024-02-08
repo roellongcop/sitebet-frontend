@@ -1,24 +1,38 @@
-@media only screen and (max-width: 1520px) {
-  section.hero-container {
-    height: 116vh;
-  }
-}
 @media only screen and (max-width: 1441px) {
   .thumbnail-main-container.scrollable {
     justify-content: flex-start;
   }
   section.hero-container {
-    height: 91vh;
+    height: 62vw;
+  }
+  section.hero-container .banner-image-container .main-image {
+    height: 34vw;
+  }
+  section.hero-container .banner-image-container .side-image {
+    height: 25vw;
   }
 }
 @media only screen and (max-width: 1025px) {
   section.hero-container {
-    height: 79vh;
+    height: 78vw;
+  }
+  section.hero-container h1.title {
+    font-size: 2.5rem;
+  }
+  section.hero-container .banner-image-container .main-image {
+    height: 40vw;
+  }
+  section.hero-container .banner-image-container .side-image {
+    height: 29vw;
   }
   header .navbar .btn-language {
     display: flex;
     justify-content: space-between;
     gap: 5px;
+  }
+  section.hero-container p.sub-title {
+    max-width: 20rem;
+    font-size: 13px;
   }
   /*START FOOTER*/
   footer .second-section {
@@ -56,6 +70,9 @@
   /*END FOOTER*/
 }
 @media only screen and (max-width: 991px) {
+  section.hero-container {
+
+  }
   /* Initial state of the menu: hidden off the left side of the screen */
   #navbarSupportedContent {
     position: fixed;
@@ -143,7 +160,7 @@
 }
 @media only screen and (max-width: 769px) {
   section.hero-container {
-    height: 65vh;
+    height: 68vw;
   }
   section.hero-container h1.title {
     font-size: 2rem;
@@ -185,6 +202,12 @@
   }
 }
 @media only screen and (max-width: 426px) {
+  main .search-container .input-group {
+    min-width: auto;
+  }
+  main .tab-container .tab-item a {
+    font-size: 13px;
+  }
   .thumbnail-main-container {
     gap: 0;
   }
@@ -195,7 +218,7 @@
     max-width: 100px;
   }
   section.hero-container {
-    height: 44vh;
+    height: 84vw;
   }
   section.hero-container h1.title {
     font-size: 1.5rem;
