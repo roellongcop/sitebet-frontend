@@ -1,0 +1,305 @@
+@media only screen and (max-width: 1441px) {
+  .thumbnail-main-container.scrollable {
+    justify-content: flex-start;
+  }
+  section.hero-container {
+    height: 91vh;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  section.hero-container {
+    height: 79vh;
+  }
+  header .navbar .btn-language {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  /*START FOOTER*/
+  footer .second-section {
+    width: 100%;
+  }
+  footer .second-section .footer-title {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  footer .left-image-container {
+    width: 100%;
+    justify-content: center;
+  }
+  footer .right-image-container {
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: center;
+  }
+  footer .footer-title-container {
+    width: 25%;
+  }
+  footer .licensed-text {
+    text-align: center;
+  }
+  footer .partner-images-container {
+    justify-content: center;
+  }
+  footer .notice {
+    text-align: center;
+  }
+  footer .copy-right {
+    text-align: center;
+  }
+  /*END FOOTER*/
+}
+@media only screen and (max-width: 991px) {
+  /* Initial state of the menu: hidden off the left side of the screen */
+  #navbarSupportedContent {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%; /* Move it off-screen */
+    width: 30%; /* Adjust based on your preference */
+    overflow-y: auto;
+    transition: left 0.3s ease; /* Smooth transition for sliding effect */
+    background-color: #1b222d; /* Assuming a light theme; adjust as necessary */
+    z-index: 999; /* Ensure it's above other content */
+  }
+  /* State of the menu when it's shown: moved into view */
+  .show-menu {
+    left: 0 !important; /* Move it into view */
+  }
+  header .navbar .navbar-toggler {
+    background: #1b222d;
+    border-color: #1b222d;
+  }
+  header .navbar .navbar-toggler:hover {
+    background: #0f141c;
+    border-color: #0f141c;
+  }
+  header .main-menu {
+    justify-content: flex-start !important;
+    gap: 1rem !important;
+    width: auto;
+  }
+  header .main-menu svg {
+    width: 60px;
+  }
+  .container {
+    max-width: 900px!important;
+  }
+  header .navbar-nav {
+    align-items: center !important;
+    padding-top: 1rem !important;
+    gap: 0.5rem;
+  }
+  header .close-icon-container {
+    display: flex;
+    justify-content: end;
+    padding-right: 1rem;
+    padding-top: 1rem;
+  }
+  header .close-icon-container button {
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+  }
+  header .close-icon-container button:hover {
+    background: #0f141c;
+  }
+  header .nav-item {
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .nav-link.active {
+    background: #0f141c;
+  }
+  header .nav-link {
+    width: inherit;
+    justify-content: center;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+  header .navbar .header-button {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 769px) {
+  section.hero-container {
+    height: 65vh;
+  }
+  section.hero-container h1.title {
+    font-size: 2rem;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+  section.hero-container .main-title-container {
+    max-width: 30rem;
+  }
+  section.hero-container .hero-text-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  section.hero-container p.sub-title {
+    font-size: 12px;
+    max-width: 18rem;
+  }
+  #navbarSupportedContent {
+    width: 40%; /* Adjust based on your preference */
+  }
+  header .mobile-header-logo {
+    width: 82px;
+    margin-left: 5px;
+  }
+  section.hero-container .banner-image-container .main-image {
+    height: 35vw;
+  }
+  section.hero-container .banner-image-container .side-image {
+    height: 23vw;
+  }
+  section.hero-container .banner-image-container h5 {
+    bottom: -1rem;
+  }
+  .thumbnail-container {
+    flex: 0 0 calc(33% - 13px);
+  }
+  .thumbnail-main-container {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .thumbnail-main-container {
+    gap: 0;
+  }
+  header .main-menu svg {
+    width: 50px;
+  }
+  header .main-header img {
+    max-width: 100px;
+  }
+  section.hero-container {
+    height: 44vh;
+  }
+  section.hero-container h1.title {
+    font-size: 1.5rem;
+    line-height: 22px;
+  }
+  section.hero-container .main-title-container {
+    max-width: 22rem;
+  }
+  section.hero-container .hero-text-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  section.hero-container p.sub-title {
+    font-size: 10px;
+    max-width: 15rem;
+    margin-top: 0.5rem;
+  }
+  #navbarSupportedContent {
+    width: 60%; /* Adjust based on your preference */
+  }
+  /*START FOOTER*/
+  footer .footer-title-container {
+    width: 100%;
+  }
+  footer .left-image-container .img-container {
+    width: 50%;
+    text-align: center;
+  }
+  footer .footer-container .footer-content {
+    text-align: center;
+  }
+  footer .footer-container .footer-title {
+    text-align: center;
+  }
+  footer .community-container,
+  footer .help-container,
+  footer .casino-container {
+    margin-top: 1rem;
+  }
+  footer .partner-container {
+    margin-top: 1rem !important;
+  }
+  /*END FOOTER*/
+  section.hero-container .banner-image-container .main-image {
+    height: 44vw;
+  }
+  section.hero-container .banner-image-container .side-image {
+    height: 28vw;
+  }
+  section.hero-container .banner-image-container h5 {
+    font-size: 12px;
+  }
+  h5.bottom-title {
+    font-size: 16px;
+  }
+  main .tab-main-container {
+    display: unset;
+  }
+  main .see-all-link {
+    display: none;
+  }
+  main .search-container {
+    border-bottom: unset;
+  }
+  .thumbnail-container {
+    flex: 0 0 calc(49% - 10px);
+  }
+}
+@media only screen and (max-width: 376px) {
+  #navbarSupportedContent {
+    width: 70%; /* Adjust based on your preference */
+  }
+  section.hero-container {
+    height: 40vh;
+  }
+  header .main-menu svg {
+    width: 58px;
+  }
+  .thumbnail-container {
+    flex: 0 0 calc(49% - 11px);
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  section.hero-container {
+    height: 34vh;
+  }
+  section.hero-container h1.title {
+    font-size: 1.3rem;
+    line-height: 20px;
+  }
+  section.hero-container .main-title-container {
+    max-width: 18rem;
+  }
+  section.hero-container .hero-text-container {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  section.hero-container p.sub-title {
+    font-size: 9px;
+  }
+  header .main-header img {
+    max-width: 100px;
+  }
+  header .main-menu svg {
+    width: 50px;
+  }
+  header .main-menu {
+    gap: 0.5rem;
+  }
+}
+
