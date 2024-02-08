@@ -298,7 +298,7 @@
     width: 70%; /* Adjust based on your preference */
   }
   section.hero-container {
-    height: 40vh;
+    height: 86vw;
   }
   header .main-menu svg {
     width: 58px;
@@ -309,7 +309,7 @@
 }
 @media only screen and (max-width: 321px) {
   section.hero-container {
-    height: 34vh;
+    height: 86vw;
   }
   section.hero-container h1.title {
     font-size: 1.3rem;
@@ -323,13 +323,14 @@
     padding-bottom: 0.5rem;
   }
   section.hero-container p.sub-title {
-    font-size: 9px;
+    font-size: 8px;
+    max-width: 12rem;
   }
   header .main-header img {
-    max-width: 100px;
+    max-width: 90px;
   }
   header .main-menu svg {
-    width: 50px;
+    width: 45px;
   }
   header .main-menu {
     gap: 0.5rem;
