@@ -35,4 +35,14 @@ document.addEventListener("DOMContentLoaded", function() {
             closeMenu();
         }
     });
+
+    var imgContainers = document.querySelectorAll('.img-container');
+
+    imgContainers.forEach(function(container) {
+        var imgSrc = container.getAttribute('data-src');
+        if (imgSrc) {
+            container.style.backgroundImage = 'url(' + imgSrc + ')';
+        }
+    });
+
 });
