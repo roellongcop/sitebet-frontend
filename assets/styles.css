@@ -1091,6 +1091,11 @@ main.affiliates-container form button:hover {
   padding: 2rem 1.8rem;
   border-radius: 20px;
 }
+.deposit-tab .input-group input {
+  font-size: 14px;
+  color: #E6A42E
+  font-weight: 500;
+}
 .account-profile input.form-control {
   background: #0E1219;
   color: #FFF;
@@ -1466,4 +1471,10 @@ footer .footer-inner-container {
 }
 br.mobile {
   display: none;
+}
+
+input.current-balance {
+  font-size: 14px !important;
+  color: #E6A42E !important;
+  font-weight: 500;
 }
