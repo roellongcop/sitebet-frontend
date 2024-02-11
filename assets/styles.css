@@ -109,8 +109,10 @@ body {
 body.promotions-page,
 body.affiliates-page {
   background: url(images/base.jpg);
-  background-attachment: fixed;
-  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #0a0d15;
+  background-position: top;
 }
 body.account-profile-page {
   background: url(images/main-bg.png);
@@ -274,24 +276,14 @@ header .navbar .btn-sign-up:hover {
   background-color: #FFF !important;
   color: #E6A42E !important;
 }
-header .navbar .dropdown:hover .dropdown-menu {
-  display: block;
-}
 header .navbar .dropdown-menu {
-  display: block;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0.5s;
+ 
   right: 0;
-}
-header .navbar .dropdown:hover .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
 }
 header .navbar .dropdown-toggle .fa-angle-down {
   transition: transform 0.3s ease;
 }
-header .navbar .dropdown:hover .fa-angle-down {
+header .navbar .btn-language:hover .fa-angle-down {
   transform: rotate(-180deg);
 }
 header .navbar .dropdown-toggle::after {
@@ -418,13 +410,16 @@ footer .left-image-container {
   align-items: center;
   flex-wrap: wrap;
 }
+footer .partner-images-container  {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
 footer .partner-images-container img {
   min-height: 20px;
-  max-height: 35px;
+  max-height: 20px;
   margin-right: 1rem
-}
-footer .partner-container {
-  margin-bottom: 0.5rem !important;
 }
 footer .account-inner-container {
   display: flex;
@@ -550,6 +545,9 @@ main .tab-container .tab-item {
   align-items: center;
   flex: 0 0 auto;
 }
+main .tab-container .tab-item:hover {
+  border-bottom: 4px solid #FBC443;
+}
 main .tab-container .tab-item.active {
   border-bottom: 4px solid #FBC443;
 }
@@ -558,7 +556,7 @@ main .tab-container .tab-item a {
   color: #616161;
 }
 main .tab-container .tab-item a img {
-  max-height: 20px;
+  max-height: 24px;
 }
 main .tab-container .tab-item a:hover {
   color: #FBC443;
@@ -662,8 +660,8 @@ main .promotions-container .promotions-inner-container button {
   background: #D9AB63;
   color: #FFF;
   border-radius: 9px;
-  font-size: 10px;
-  font-weight: bold;
+  font-size: 9px;
+  font-weight: 600;
   padding: 0.5rem 2rem;
   max-width: fit-content;
 }
@@ -671,6 +669,7 @@ main .promotions-container .promotions-inner-container button:hover {
   background: #FFF;
   color: #D9AB63; 
 }
+main .promotions-main-container,
 main.terms-and-condition-container .main-container,
 main.affiliates-container .affiliates-main-container {
   margin: 2rem 7rem;
@@ -679,6 +678,7 @@ main.affiliates-container .affiliates-main-container {
   padding-bottom: 10rem;
   border-radius: 20px;
 }
+
 main.terms-and-condition-container .main-container h1,
 main.affiliates-container .affiliates-inner-container h1 {
   color: #FFF;
@@ -1158,6 +1158,10 @@ main.affiliates-container form button:hover {
   justify-content: space-between;
   align-items: center;
 }
+.deposit-tab .payment-option-container button.btn-block:hover, 
+.deposit-tab .payment-option-container button.btn-block.active {
+  outline: 4px solid #D9AB63;
+}
 .deposit-tab .payment-option-container button.btn-block img {
   max-height: 15px;
 }
@@ -1365,6 +1369,17 @@ main.affiliates-container form button:hover {
   gap: 2rem;
   font-size: 12px;
 }
+
+.input-container button:hover {
+  border: 1px solid #E6A42E !important;
+}
+.input-container button span {
+  color: #A5A5A5;
+  background: transparent;
+}
+.input-container button:hover span {
+  color: #A5A5A5;
+}
 .referral-text {
   font-size: 12px; 
   color:#EEEEEE;
@@ -1400,4 +1415,55 @@ main.affiliates-container form button:hover {
   color: #E6A42E;
   text-align: right;
   font-size: 1.5rem;
+}
+.search-container .dropdown {
+  display: none;
+}
+
+.search-container .dropdown {
+  width: 50%;
+}
+.search-container .dropdown .dropdown-toggle {
+  border-radius: 10px;
+  background-color: #0F141C;
+  color: #5E5E5E;
+  border: none;
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+}
+.search-container .dropdown-toggle::after {
+  position: absolute;
+  right: 8px;
+  top: 14px;
+  color: #FFD787;
+}
+.search-container .dropdown-menu {
+  font-size: 14px;
+  background: #0f141c;
+  border: 1px solid #616161;
+}
+.search-container .dropdown-menu .dropdown-item {
+  color: #616161;
+}
+footer .footer-inner-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.selected-language {
+  display: none;
+}
+.display-block {
+  display: block !important;
+}
+.display-none {
+  display: none !important;
+}
+.deposit-tab .input-group input.text-right:focus {
+  box-shadow: unset;
+}
+br.mobile {
+  display: none;
 }

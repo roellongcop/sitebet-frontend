@@ -8,7 +8,7 @@
     <link href="assets/bootstrap-5.3.2.min.css" rel="stylesheet">
     <link href="assets/font-awesome-6.0.0.min.css" rel="stylesheet">
     <link href="assets/styles.css" rel="stylesheet">
-    <link href="assets/responsive.css" rel="stylesheet">
+    <link href="assets/responsive/index.css" rel="stylesheet">
   </head>
   <body class="affiliates-page">
     <header class="header">
@@ -24,32 +24,32 @@
             <div class="navbar-collapse main-header" id="navbarSupportedContent">
               <div class="close-icon-container"><button type="button"><i class="fa fa-times"></i></button></div>
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link " aria-current="page" href="main-lobby-1.html"> HOME </a></li>
-                <li class="nav-item"><a class="nav-link " aria-current="page" href="slot-lobby-1.html"> SLOTS </a></li>
-                <li class="nav-item"><a class="nav-link " aria-current="page" href="live-lobby-1.html"> LIVE </a></li>
-                <li class="nav-item"><a class="nav-link " aria-current="page" href="shooting-1.html"> SHOOTING </a></li>
-                <li class="nav-item"><a class="nav-link " aria-current="page" href="promotions-1.html"> PROMOTIONS </a></li>
+                <li class="nav-item"><a class="nav-link " aria-current="page" href="index-1.php"> HOME </a></li>
+                <li class="nav-item"><a class="nav-link " aria-current="page" href="slot-lobby-1.php"> SLOTS </a></li>
+                <li class="nav-item"><a class="nav-link " aria-current="page" href="live-lobby-1.php"> LIVE </a></li>
+                <li class="nav-item"><a class="nav-link " aria-current="page" href="shooting-1.php"> SHOOTING </a></li>
+                <li class="nav-item"><a class="nav-link " aria-current="page" href="promotions-1.php"> PROMOTIONS </a></li>
                 <li class="nav-item"><a class="nav-link " aria-current="page" href="#"> HELP CENTRE </a></li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="affiliates-1.html"> AFFILIATES </a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="affiliates-1.php"> AFFILIATES </a></li>
               </ul>
               <div class="flex header-button">
                 <div class="account-container"><a href="" class="account">
                     <div class="username">GNBTestaccount</div>
                     <div class="money"> 12,000 USD <i class="fa-solid fa-wallet"></i></div>
-                  </a><a href="deposit.html" class="btn btn-warning text-white py-2 btn-deposit">DEPOSIT</a>
-                  <div class="circle-btn-container"><a href="account-profile.html" title="Account profile"><i class="fa fa-user"></i></a></div>
-                  <div class="circle-btn-container btn-logout"><a href="main-lobby.html" title="Logout"><i class="fa-solid fa-right-from-bracket"></i></a></div>
+                  </a><a href="deposit.php" class="btn btn-warning text-white py-2 btn-deposit">DEPOSIT</a>
+                  <div class="circle-btn-container"><a href="account-profile.php" title="Account profile"><i class="fa fa-user"></i></a></div>
+                  <div class="circle-btn-container btn-logout"><a href="index.php" title="Logout"><i class="fa-solid fa-right-from-bracket"></i></a></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="dropdown language-dropdown"><button data-bs-offset="100,100" class="btn btn-secondary dropdown-toggle btn-language" type="button"><img src="assets/images/languages/us.png" class="img-fluid"><i class="fas fa-angle-down"></i></button>
+          <div class="dropdown language-dropdown"><button data-bs-offset="100,100" class="btn btn-secondary dropdown-toggle btn-language" type="button" data-toggle="dropdown"><span class="selected-language">English</span><img src="assets/images/languages/us.png" class="img-fluid"><i class="fas fa-angle-down"></i></button>
             <ul class="dropdown-menu dropdown-menu-dark py-3">
-              <li><a class="dropdown-item active" href="#"><img src="assets/images/languages/us.png" class="img-fluid"> English </a></li>
-              <li><a class="dropdown-item" href="#"><img src="assets/images/languages/china.png" class="img-fluid"> 汉语 </a></li>
-              <li><a class="dropdown-item" href="#"><img src="assets/images/languages/thailand.png" class="img-fluid"> ภาษาไทย </a></li>
-              <li><a class="dropdown-item" href="#"><img src="assets/images/languages/korea.png" class="img-fluid"> 한국어 </a></li>
-              <li><a class="dropdown-item" href="#"><img src="assets/images/languages/japan.png" class="img-fluid"> 日本語 </a></li>
+              <li><a class="dropdown-item active" href="#" data-value="English"><img src="assets/images/languages/us.png" class="img-fluid"> English </a></li>
+              <li><a class="dropdown-item" href="#" data-value="汉语"><img src="assets/images/languages/china.png" class="img-fluid"> 汉语 </a></li>
+              <li><a class="dropdown-item" href="#" data-value="ภาษาไทย"><img src="assets/images/languages/thailand.png" class="img-fluid"> ภาษาไทย </a></li>
+              <li><a class="dropdown-item" href="#" data-value="한국어"><img src="assets/images/languages/korea.png" class="img-fluid"> 한국어 </a></li>
+              <li><a class="dropdown-item" href="#" data-value="日本語"><img src="assets/images/languages/japan.png" class="img-fluid"> 日本語 </a></li>
             </ul>
           </div>
         </div>
@@ -87,7 +87,7 @@
               <p>Support for customers and affiliates in 11 different languages, customers from over 25 countries.</p>
             </div>
           </div>
-          <h2 class="header-title mt-5 mb-4">Contact our Affiliate Team!</h2>
+          <h2 class="header-title mt-5 mb-4">Contact our <br class="mobile"> Affiliate Team!</h2>
           <div class="contact-header">
             <div class="contact-inner-header"><a class="btn"><i class="fa-solid fa-paper-plane"></i></a><a href="#" class="link">Telegram</a></div>
             <div class="contact-inner-header"><a class="btn"><i class="fa-solid fa-envelope"></i></a><a href="#" class="link">test@youremail.com</a></div>
@@ -109,7 +109,7 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="container">
-          <div class="flex w-100 wrap justify-between">
+          <div class="footer-inner-container">
             <div class="footer-title-container">
               <div class="footer-title"> About Us </div>
               <div class="footer-content">
@@ -150,7 +150,7 @@
             </div>
             <div class="second-section">
               <div class="footer-title partner-container"> Partners: </div>
-              <div class="flex wrap align-items-center partner-images-container"><a href="#"><img src="assets/images/Logo/bbtech.png" class="mh24"></a><a href="#"><img src="assets/images/Logo/cq9.png" class="mh25"></a><a href="#"><img src="assets/images/Logo/playtec.png" class="mh50"></a><a href="#"><img src="assets/images/Logo/habanero.png" class="mh25"></a><a href="#"><img src="assets/images/Logo/ag.png"></a>
+              <div class="partner-images-container"><a href="#"><img src="assets/images/Logo/bbtech.png"></a><a href="#"><img src="assets/images/Logo/cq9.png"></a><a href="#"><img src="assets/images/Logo/playtec.png"></a><a href="#"><img src="assets/images/Logo/habanero.png"></a><a href="#"><img src="assets/images/Logo/ag.png"></a>
                 <!-- <div>pragmatic</div> -->
                 <a href="#">
                   <img src="assets/images/Logo/boongo.png">
@@ -159,7 +159,7 @@
                   <img src="assets/images/Logo/pgsoft.png">
                 </a>
                 <a href="#">
-                  <img src="assets/images/Logo/playngo.png" class="mh25">
+                  <img src="assets/images/Logo/playngo.png">
                 </a>
                 <a href="#">
                   <img src="assets/images/Logo/mg.png">
@@ -212,14 +212,14 @@
             </div>
           </a>
           <div class="flex justify-between align-items-center gap10">
-            <a href="deposit.html" class="btn btn-warning text-white py-2 btn-deposit">DEPOSIT</a>
+            <a href="deposit.php" class="btn btn-warning text-white py-2 btn-deposit">DEPOSIT</a>
             <div class="circle-btn-container">
-              <a href="account-profile.html" title="Account Profile">
+              <a href="account-profile.php" title="Account Profile">
                 <i class="fa fa-user"></i>
               </a>
             </div>
             <div class="circle-btn-container btn-logout">
-              <a href="main-lobby.html" title="Logout">
+              <a href="index.php" title="Logout">
                 <i class="fa-solid fa-right-from-bracket"></i>
               </a>
             </div>
@@ -227,7 +227,8 @@
         </div>
       </div>
     </footer>
-    <script src="assets/script.js"></script>
     <script src="assets/bootstrap-5.3.2.bundle.min.js"></script>
+    <script src="assets/jquery-3.7.1.min.js"></script>
+    <script src="assets/script.js"></script>
   </body>
 </html>

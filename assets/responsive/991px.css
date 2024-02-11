@@ -1,0 +1,106 @@
+@media only screen and (max-width: 991px) {
+  .account-profile {
+    width: 80%;
+  }
+  main .promotions-main-container {
+    flex-direction: column;
+  }
+  main .promotions-wrapper {
+    width: 100%;
+    margin-left: 0;
+  }
+  footer .footer-bottom-container {
+    margin-bottom: 70px;
+  }
+  header .account-container {
+    display: none;
+  }
+  footer .account-container {
+    display: flex;
+  }
+  /* Initial state of the menu: hidden off the left side of the screen */
+  #navbarSupportedContent {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%; /* Move it off-screen */
+    width: 30%; /* Adjust based on your preference */
+    overflow-y: auto;
+    transition: left 0.3s ease; /* Smooth transition for sliding effect */
+    background-color: #1b222d; /* Assuming a light theme; adjust as necessary */
+    z-index: 999; /* Ensure it's above other content */
+  }
+  /* State of the menu when it's shown: moved into view */
+  .show-menu {
+    left: 0 !important; /* Move it into view */
+  }
+  header .navbar .navbar-toggler {
+    background: #1b222d;
+    border-color: #1b222d;
+  }
+  header .navbar .navbar-toggler:hover {
+    background: #0f141c;
+    border-color: #0f141c;
+  }
+  header .main-menu {
+    justify-content: flex-start !important;
+    gap: 1rem !important;
+    width: auto;
+  }
+  header .main-menu svg {
+    width: 60px;
+  }
+  .container {
+    max-width: 900px!important;
+  }
+  header .navbar-nav {
+    align-items: center !important;
+    padding-top: 1rem !important;
+    gap: 0.5rem;
+  }
+  header .close-icon-container {
+    display: flex;
+    justify-content: end;
+    padding-right: 1rem;
+    padding-top: 1rem;
+  }
+  header .close-icon-container button {
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+  }
+  header .close-icon-container button:hover {
+    background: #0f141c;
+  }
+  header .nav-item {
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .nav-link.active {
+    background: #0f141c;
+  }
+  header .nav-link {
+    width: inherit;
+    justify-content: center;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+  header .navbar .header-button {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    display: none;
+  }
+}

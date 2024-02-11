@@ -1,0 +1,11 @@
+@media only screen and (max-width: 391px) {
+  section.hero-container p.sub-title {
+    display: none;
+  }
+  section.hero-container .hero-text-container {
+    padding-top: 2rem;
+  }
+  section.hero-container {
+    height: 82vw;
+  }
+}

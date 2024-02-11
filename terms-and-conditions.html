@@ -8,7 +8,7 @@
     <link href="assets/bootstrap-5.3.2.min.css" rel="stylesheet">
     <link href="assets/font-awesome-6.0.0.min.css" rel="stylesheet">
     <link href="assets/styles.css" rel="stylesheet">
-    <link href="assets/responsive.css" rel="stylesheet">
+    <link href="assets/responsive/index.css" rel="stylesheet">
   </head>
   <body class="">
     <header class="header">
@@ -24,24 +24,24 @@
             <div class="navbar-collapse main-header" id="navbarSupportedContent">
               <div class="close-icon-container"><button type="button"><i class="fa fa-times"></i></button></div>
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link " aria-current="page" href="main-lobby.html"> HOME </a></li>
-                <li class="nav-item"><a class="nav-link " aria-current="page" href="slot-lobby.html"> SLOTS </a></li>
-                <li class="nav-item"><a class="nav-link " aria-current="page" href="live-lobby.html"> LIVE </a></li>
-                <li class="nav-item"><a class="nav-link " aria-current="page" href="shooting.html"> SHOOTING </a></li>
-                <li class="nav-item"><a class="nav-link " aria-current="page" href="promotions.html"> PROMOTIONS </a></li>
+                <li class="nav-item"><a class="nav-link " aria-current="page" href="index.php"> HOME </a></li>
+                <li class="nav-item"><a class="nav-link " aria-current="page" href="slot-lobby.php"> SLOTS </a></li>
+                <li class="nav-item"><a class="nav-link " aria-current="page" href="live-lobby.php"> LIVE </a></li>
+                <li class="nav-item"><a class="nav-link " aria-current="page" href="shooting.php"> SHOOTING </a></li>
+                <li class="nav-item"><a class="nav-link " aria-current="page" href="promotions.php"> PROMOTIONS </a></li>
                 <li class="nav-item"><a class="nav-link " aria-current="page" href="#"> HELP CENTRE </a></li>
-                <li class="nav-item"><a class="nav-link " aria-current="page" href="affiliates.html"> AFFILIATES </a></li>
+                <li class="nav-item"><a class="nav-link " aria-current="page" href="affiliates.php"> AFFILIATES </a></li>
               </ul>
               <div class="flex header-button"><a class="btn btn-outline-warning py-2 btn-login" data-bs-toggle="modal" data-bs-target="#modal-login">LOGIN</a><a class="btn btn-warning text-white py-2 btn-sign-up" data-bs-toggle="modal" data-bs-target="#modal-signup">SIGN UP</a></div>
             </div>
           </div>
-          <div class="dropdown language-dropdown"><button data-bs-offset="100,100" class="btn btn-secondary dropdown-toggle btn-language" type="button"><img src="assets/images/languages/us.png" class="img-fluid"><i class="fas fa-angle-down"></i></button>
+          <div class="dropdown language-dropdown"><button data-bs-offset="100,100" class="btn btn-secondary dropdown-toggle btn-language" type="button" data-toggle="dropdown"><span class="selected-language">English</span><img src="assets/images/languages/us.png" class="img-fluid"><i class="fas fa-angle-down"></i></button>
             <ul class="dropdown-menu dropdown-menu-dark py-3">
-              <li><a class="dropdown-item active" href="#"><img src="assets/images/languages/us.png" class="img-fluid"> English </a></li>
-              <li><a class="dropdown-item" href="#"><img src="assets/images/languages/china.png" class="img-fluid"> 汉语 </a></li>
-              <li><a class="dropdown-item" href="#"><img src="assets/images/languages/thailand.png" class="img-fluid"> ภาษาไทย </a></li>
-              <li><a class="dropdown-item" href="#"><img src="assets/images/languages/korea.png" class="img-fluid"> 한국어 </a></li>
-              <li><a class="dropdown-item" href="#"><img src="assets/images/languages/japan.png" class="img-fluid"> 日本語 </a></li>
+              <li><a class="dropdown-item active" href="#" data-value="English"><img src="assets/images/languages/us.png" class="img-fluid"> English </a></li>
+              <li><a class="dropdown-item" href="#" data-value="汉语"><img src="assets/images/languages/china.png" class="img-fluid"> 汉语 </a></li>
+              <li><a class="dropdown-item" href="#" data-value="ภาษาไทย"><img src="assets/images/languages/thailand.png" class="img-fluid"> ภาษาไทย </a></li>
+              <li><a class="dropdown-item" href="#" data-value="한국어"><img src="assets/images/languages/korea.png" class="img-fluid"> 한국어 </a></li>
+              <li><a class="dropdown-item" href="#" data-value="日本語"><img src="assets/images/languages/japan.png" class="img-fluid"> 日本語 </a></li>
             </ul>
           </div>
         </div>
@@ -50,7 +50,7 @@
     <main class="terms-and-condition-container">
       <div class="container">
         <div class="main-container">
-          <h1>Terms and Condition</h1>
+          <h1>Terms & <br class="mobile"> Conditions</h1>
           <div class="mt-5">
             <p>About</p>
             <p> Affiliate Program Terms and Conditions The following terms and conditions are the terms and conditions for participating in the Wild Jungle Casino Affiliate Program. Please read and understand these Terms of Use carefully. By sending these applications, you "agree" to the contents of the following matters, and you "agree" that they conform to the same items. You can join and sign up for the Wild Jungle Casino affiliate program by setting up a dedicated link or placing a dedicated banner.</p>
@@ -115,7 +115,7 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="container">
-          <div class="flex w-100 wrap justify-between">
+          <div class="footer-inner-container">
             <div class="footer-title-container">
               <div class="footer-title"> About Us </div>
               <div class="footer-content">
@@ -156,7 +156,7 @@
             </div>
             <div class="second-section">
               <div class="footer-title partner-container"> Partners: </div>
-              <div class="flex wrap align-items-center partner-images-container"><a href="#"><img src="assets/images/Logo/bbtech.png" class="mh24"></a><a href="#"><img src="assets/images/Logo/cq9.png" class="mh25"></a><a href="#"><img src="assets/images/Logo/playtec.png" class="mh50"></a><a href="#"><img src="assets/images/Logo/habanero.png" class="mh25"></a><a href="#"><img src="assets/images/Logo/ag.png"></a>
+              <div class="partner-images-container"><a href="#"><img src="assets/images/Logo/bbtech.png"></a><a href="#"><img src="assets/images/Logo/cq9.png"></a><a href="#"><img src="assets/images/Logo/playtec.png"></a><a href="#"><img src="assets/images/Logo/habanero.png"></a><a href="#"><img src="assets/images/Logo/ag.png"></a>
                 <!-- <div>pragmatic</div> -->
                 <a href="#">
                   <img src="assets/images/Logo/boongo.png">
@@ -165,7 +165,7 @@
                   <img src="assets/images/Logo/pgsoft.png">
                 </a>
                 <a href="#">
-                  <img src="assets/images/Logo/playngo.png" class="mh25">
+                  <img src="assets/images/Logo/playngo.png">
                 </a>
                 <a href="#">
                   <img src="assets/images/Logo/mg.png">
@@ -239,7 +239,7 @@
                   <i class="fa fa-times"></i>
                 </div>
                 <h5 class="mt-3">Login</h5>
-                <form action="main-lobby-1.html">
+                <form action="index-1.php">
                   <div class="form-group mb-2">
                     <label>Username</label>
                     <input type="text" name="" class="form-control" placeholder="Username">
@@ -304,7 +304,7 @@
                 </div>
                 <h5 class="mt-3">Sign Up</h5>
                 <div class="error-message"> Username already taken </div>
-                <form action="main-lobby-1.html">
+                <form action="index-1.php">
                   <div class="form-group mb-2">
                     <input type="text" name="" class="form-control" placeholder="Username">
                   </div>
@@ -330,7 +330,7 @@
                   </div>
                   <div class="form-check mb-2">
                     <input class="form-check-input" type="checkbox" value="" id="terms">
-                    <label class="form-check-label" for="terms"> I agree to <a href="terms-and-conditions.html">Terms & Conditions</a> and Privacy Policy </label>
+                    <label class="form-check-label" for="terms"> I agree to <a href="terms-and-conditions.php">Terms & Conditions</a> and Privacy Policy </label>
                   </div>
                   <div class="form-check mb-2">
                     <input class="form-check-input" type="checkbox" value="" id="agree">
@@ -371,7 +371,8 @@
         </div>
       </div>
     </div>
-    <script src="assets/script.js"></script>
     <script src="assets/bootstrap-5.3.2.bundle.min.js"></script>
+    <script src="assets/jquery-3.7.1.min.js"></script>
+    <script src="assets/script.js"></script>
   </body>
 </html>
