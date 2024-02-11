@@ -36,4 +36,14 @@
   header .main-menu {
     gap: 0.5rem;
   }
+
+  main .promotions-main-container {
+    padding: 1rem 1rem;
+  }
+  main.affiliates-container .affiliates-main-container {
+    padding: 2rem 1rem;
+  }
+  main .promotions-container .title {
+    margin-top: 1rem!important;
+  }
 }

@@ -49,4 +49,10 @@
   .nav-fill .nav-item .nav-link.active {
     font-size: 12px;
   }
+  main .promotions-main-container {
+    padding: 2rem 2rem;
+  }
+  main.affiliates-container .affiliates-main-container {
+    padding: 2rem 2rem;
+  }
 }

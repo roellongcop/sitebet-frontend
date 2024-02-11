@@ -45,6 +45,7 @@
   }
   .thumbnail-container.scrollable {
     gap: 0.5rem;
+    flex: 0 0 calc(40% - 13px);
   }
   .thumbnail-main-container {
     margin-top: 0rem;
@@ -186,5 +187,22 @@
   }
   br.mobile {
     display: block;
+  }
+  .nav-fill .nav-item .nav-link.active, .account-profile .form-title {
+    font-weight: normal;
+  }
+  .thumbnail-container.scrollable a {
+    padding: 3px;
+  }
+  .thumbnail-container {
+    padding: 3px;
+  } 
+  main.affiliates-container .gray-card {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: -webkit-fill-available;
+  }
+  main .promotions-main-container {
+    padding: 2rem 1rem;
   }
 }
